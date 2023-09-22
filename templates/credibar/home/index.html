@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credibar</title>
+    <link rel="icon" href="{% static "credibar/images/logo.webp" %}" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+</head>
+
+<body>
+    <div class="error_page">
+        <div class="container">
+            <div class="not_found_wrapper">
+                <ul class="not_found_list">
+                    <li>
+                        <img src="{% static "credibar/images/logo.webp" %}" alt="Credibar">
+                    </li>
+                    <li>
+                        <h1>Hello! #credibar</h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<style rel="stylesheet">
+    * {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        margin: 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .error_page {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #fff;
+    }
+
+    .not_found_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .not_found_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .not_found_list h1 {
+        font-size: 124px;
+        color: #004BA8;
+        font-weight: 700;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+
+    .not_found_list h5 {
+        font-size: 34px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        line-height: 1;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    .not_found_list p {
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        line-height: 1;
+        margin-bottom: 20px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .main_button {
+        background: linear-gradient(109.6deg, #00A7E1 11.2%, #004BA8 91.1%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        padding: 8px 25px;
+        height: 40px;
+        color: #ffff;
+        font-size: 15px;
+        line-height: 1;
+        font-weight: 500;
+        min-width: 80px;
+        transition: all 0.2s ease;
+    }
+
+    @media (max-width:1400px) {
+        /*----------- 404 page------------ */
+        .not_found_list h1 {
+            font-size: 100px;
+        }
+
+        .not_found_list h5 {
+            font-size: 30px;
+            color: #ffffff;
+            font-weight: 500;
+            font-family: var(--font-family);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .not_found_list p {
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+    }
+</style>
+
+</html>
